@@ -122,7 +122,6 @@ button {
   justify-content: flex-start;
   font-size: 14px;
   font-weight: 500;
-  
 }
 .vid-info-end {
   justify-content: flex-end;
@@ -146,26 +145,29 @@ hr {
 .channel-info-start {
   display: flex;
   font-family: "roboto", sans-serif;
-  
-
 }
 .channel-info-start h5 {
   color: #030303;
 }
-.channel-info-start h5 span, .fas {
+.channel-info-start h5 span,
+.fas {
   color: #606060;
 }
- .channel-info-end button {
- padding: 10px 16px;
- font-family: "roboto", sans-serif;
- background-color: #d40000;
- color: white;
- border: none;
- border-radius: 2px;
- margin: 15px 0 0 0;
- }
-.vid-description{
+.channel-info-end button {
+  padding: 10px 16px;
+  font-family: "roboto", sans-serif;
+  background-color: #d40000;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  margin: 15px 0 0 0;
+  font-weight: 500;
+}
+.vid-description {
   margin: 10px 170px 0 60px;
+  line-height: 20px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
 }
 
 /*************** video section end ***********/
@@ -173,6 +175,98 @@ hr {
 /***************** side bar ***************/
 .side-bar {
   flex: 1;
-  background-color: royalblue;
+
   margin: 25px 100px 25px 0px;
+}
+.side-bar-top {
+  display: flex;
+  justify-content: space-between;
+}
+.side-bar-top-start {
+  font-family: "roboto", sans-serif;
+  color: #030303;
+  margin-top: 5px;
+}
+.side-bar-top-end {
+  font-family: "roboto", sans-serif;
+  color: #030303;
+  margin-top: 5px;
+  display: flex;
+}
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-left: 7px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: dodgerblue;
+}
+.toggle-control input:checked ~ .control:after {
+  left: 20px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: darkgray;
+  -webkit-transition: background-color 0.15s ease-in;
+  transition: background-color 0.15s ease-in;
+}
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: white;
+  -webkit-transition: left 0.15s ease-in;
+  transition: left 0.15s ease-in;
+}
+
+.suggestion {
+  display: flex;
+  margin: 10px 0;
+}
+.main-icon {
+  box-sizing: border-box;
+}
+.suggestion .main-icon img {
+  width: 100%;
+  flex: 4;
+}
+.suggestion .suggestion-info {
+  flex: 6;
+  margin-left: 7px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.suggestion-info .title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.suggestion-info .additional-info {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
 }

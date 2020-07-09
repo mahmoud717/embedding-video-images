@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/************* navbar ******************/
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+}
+#logo {
+  display: flex;
+}
+#logo img {
+  width: 27px;
+  justify-content: flex-start;
+  margin: 15px 0 15px 15px;
+}
+#logo h4 {
+  font-family: "roboto", sans-serif;
+  letter-spacing: -1.5px;
+  font-stretch: ultra-condensed;
+  padding-left: 1px;
+}
+.search-bar {
+  margin: auto;
+  display: flex;
+}
+.search-bar input {
+  border: 0.7px solid #cccccc;
+  border-radius: 1;
+  height: 25px;
+  width: 520px;
+  padding: 2px 23px 2px 10px;
+  outline: 0;
+  background-color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #858585;
+}
+button {
+  font-weight: 100;
+  color: #717171;
+
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0 30px 0 0;
+  padding: 0;
+  display: flex;
+}
+#navbar ul li {
+  margin: 20px 14px;
+  color: #606060;
+  display: flex;
+  font-size: 18px;
+}
+.bars {
+  margin: auto 10px auto 30px;
+}
+/************Nabar-end************/
+.main {
+  margin-top: 60px;
+  background-color: #f9f9f9;
+}
+.main-container {
+  display: flex;
+  margin-top: 10px;
+}

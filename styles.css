@@ -76,3 +76,65 @@ button {
   display: flex;
   margin-top: 10px;
 }
+/*************** video section ************/
+.video-section {
+  flex: 2;
+  margin: 25px 25px 25px 100px;
+}
+.video {
+  margin: 0px 0px 25px 0px;
+}
+.video-title {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.video-info ul {
+  list-style-type: none;
+  margin: 0 20px 0 0;
+  padding: 0;
+  display: flex;
+}
+.video-info ul li {
+  margin: 20px 10px;
+  color: #606060;
+  display: flex;
+  font-family: "roboto", sans-serif;
+  color: #707070;
+  font-size: 14px;
+}
+.video-info ul li .fas {
+  margin-right: 5px;
+}
+.video-info ul li .menu {
+  padding-right: 5px;
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+}
+.vid-info-start {
+  font-family: "roboto", sans-serif;
+  margin: 20px 0;
+  color: #848484;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+}
+.vid-info-end {
+  justify-content: flex-end;
+}
+.vid-info-end .menu {
+  width: 14px;
+  font-size: 14px;
+}
+hr {
+  border: solid 0.7px #e6e6e6;
+  margin-top: 0;
+}
+
+/*************** video section end ***********/
+
+/***************** side bar ***************/

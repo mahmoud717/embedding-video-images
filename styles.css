@@ -138,3 +138,8 @@ hr {
 /*************** video section end ***********/
 
 /***************** side bar ***************/
+.side-bar {
+  flex: 1;
+  background-color: royalblue;
+  margin: 25px 100px 25px 0px;
+}

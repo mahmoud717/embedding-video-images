@@ -148,7 +148,7 @@ hr {
 .buttons-start {
   display: inline-block;
   justify-content: start;
-  padding-left: 0px !important;
+  padding-left: 0px;
 }
 .buttons-start ul li button {
   padding: 0;
@@ -168,98 +168,6 @@ hr {
   margin: 0 43%;
   color: #606060;
 }
-/* .video-title {
-  font-weight: 500;
-  font-size: 20px;
-}
-.video-info ul {
-  list-style-type: none;
-  margin: 0 20px 0 0;
-  padding: 0;
-  display: flex;
-}
-.video-info ul li {
-  margin: 20px 10px;
-  color: #606060;
-  display: flex;
-  color: #707070;
-  font-size: 14px;
-}
-.video-info ul li .fas {
-  margin-right: 5px;
-}
-.video-info ul li .menu {
-  padding-right: 5px;
-}
-
-.video-info {
-  display: flex;
-  justify-content: space-between;
-  height: 55px;
-}
-.vid-info-start {
-  margin: 20px 0;
-  color: #848484;
-  justify-content: flex-start;
-  font-size: 14px;
-  font-weight: 500;
-}
-.vid-info-end {
-  justify-content: flex-end;
-}
-.vid-info-end button {
-  padding: 0;
-  border: none;
-  margin: 10px;
-  background-color: #f9f9f9;
-  outline: none;
-}
-.vid-info-end button::-moz-focus-inner {
-  border: none;
-}
-.vid-info-end button #save {
-  display: flex;
-}
-.vid-info-end .menu {
-  width: 14px;
-  font-size: 14px;
-}
-hr {
-  border: solid 0.7px #e6e6e6;
-  margin-top: 0;
-}
-.channel-image img {
-  border-radius: 50%;
-  margin: 15px 10px 0 0;
-}
-.channel-info {
-  display: flex;
-  justify-content: space-between;
-}
-.channel-info-start {
-  display: flex;
-}
-.channel-info-start h5 {
-  color: #030303;
-}
-.channel-info-start h5 span,
-.fas {
-  color: #606060;
-}
-.channel-info-end button {
-  padding: 10px 16px;
-  background-color: #d40000;
-  color: white;
-  border: none;
-  border-radius: 2px;
-  margin: 15px 0 0 0;
-  font-weight: 500;
-}
-.vid-description {
-  margin: 10px 170px 0 60px;
-  line-height: 20px;
-  font-size: 14px;
-} */
 
 /*************** video section end ***********/
 

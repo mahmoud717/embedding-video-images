@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+/************* navbar ******************/
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2%px;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+}
+#logo {
+  display: flex;
+}
+#logo img {
+  width: 27px;
+  justify-content: flex-start;
+  margin: 15px 0 15px 15px;
+}
+#logo h4 {
+  letter-spacing: -1.5px;
+  font-stretch: ultra-condensed;
+  padding-left: 1px;
+}
+.search-bar {
+  margin: auto;
+  display: flex;
+}
+.search-bar input {
+  border: 0.7px solid #cccccc;
+  border-radius: 1;
+  height: 25px;
+  width: 520px;
+  padding: 2px 23px 2px 10px;
+  outline: 0;
+  background-color: #fff;
+  font-size: 16px;
+  color: #858585;
+}
+button {
+  font-weight: 100;
+  color: #717171;
+
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0 30px 0 0;
+  padding: 0;
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+#navbar ul li {
+  margin: 20px 14px;
+  color: #606060;
+  display: flex;
+  font-size: 18px;
+}
+.bars {
+  margin: auto 10px auto 30px;
+}
+/************Nabar-end************/
+.main {
+  margin-top: 60px;
+  background-color: #f9f9f9;
+}
+.main-container {
+  display: flex;
+  margin-top: 10px;
+}
+/*************** video section ************/
+.video-section {
+  flex: 2;
+  margin: 25px 25px 25px 100px;
+}
+.video {
+  margin: 0px 0px 25px;
+}
+.under-video-section {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.title {
+  margin: 10px 0 10px 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+.channel-info {
+  display: flex;
+  justify-content: space-between;
+}
+.channel-icon img {
+  width: 80%;
+}
+.channel-info-start {
+  display: flex;
+}
+.channel-name {
+  display: block;
+  margin: 0;
+  top: 20px;
+}
+.channel-name h3 {
+  padding: 0px;
+  margin: 4px 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+.channel-name .sub {
+  padding: 5px 4px 4px 4px;
+  margin: 0;
+  font-size: 10px;
+  margin-top: 20px;
+  background-color: rgb(226, 0, 0);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #eeeeee;
+}
+.channel-info-end {
+  margin-top: 5%;
+}
+.views {
+  font-size: 25px;
+}
+hr {
+  border: solid 0.7px #e6e6e6;
+  margin-top: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons-start {
+  display: inline-block;
+  justify-content: start;
+  padding-left: 0px;
+}
+.buttons-start ul li button {
+  padding: 0;
+  border: none;
+  margin: 0px 10px;
+  background-color: #f9f9f9;
+  outline: none;
+}
+.buttons-end ul li button {
+  padding: 0;
+  border: none;
+  margin: 0 10px;
+  background-color: #f9f9f9;
+  outline: none;
+}
+.vid-description h5 {
+  margin: 0 43%;
+  color: #606060;
+}
+
+/*************** video section end ***********/
+
+/***************** side bar ***************/
+.side-bar {
+  flex: 1;
+
+  margin: 25px 100px 25px 0px;
+}
+.side-bar-top {
+  display: flex;
+  justify-content: space-between;
+}
+.side-bar-top-start {
+  color: #030303;
+  margin-top: 5px;
+}
+.side-bar-top-end {
+  color: #030303;
+  margin-top: 5px;
+  display: flex;
+}
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-left: 7px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: dodgerblue;
+}
+.toggle-control input:checked ~ .control:after {
+  left: 20px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: darkgray;
+  -webkit-transition: background-color 0.15s ease-in;
+  transition: background-color 0.15s ease-in;
+}
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: white;
+  -webkit-transition: left 0.15s ease-in;
+  transition: left 0.15s ease-in;
+}
+
+.suggestion {
+  display: flex;
+  margin: 10px 0;
+}
+.main-icon {
+  box-sizing: border-box;
+}
+.suggestion .main-icon img {
+  width: 100%;
+  flex: 4;
+}
+.suggestion .suggestion-info {
+  flex: 6;
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.suggestion-info .title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.suggestion-info .additional-info {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+}
